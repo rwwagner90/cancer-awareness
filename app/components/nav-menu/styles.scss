@@ -1,0 +1,113 @@
+li a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: $white;
+  cursor: pointer;
+  display: block;
+  padding: 1em 1em 1em 1.2em;
+  outline: none;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: background 0.3s;
+
+  &:hover {
+    background: lighten($theme-primary, 10%);
+  }
+}
+
+li a > i {
+  margin-right: 20px;
+  font-size: 20px;
+
+  &:before {
+    vertical-align: middle;
+  }
+}
+
+li:first-child a {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.add-button {
+  cursor: pointer;
+  outline: none;
+}
+
+.bm-menu {
+  background: $theme-primary;
+}
+
+.burger-hidden {
+  visibility: hidden;
+}
+
+.icon-close {
+  background: url(../svgs/close.svg) no-repeat scroll;
+  height: 18px;
+  width: 18px;
+}
+
+.icon-open {
+  background: url(../svgs/burger-menu.svg) no-repeat scroll;
+  height: 12px;
+  width: 18px;
+}
+
+.global-search {
+  background: url(../svgs/search.svg) no-repeat scroll 0px 24px;
+  border: none;
+  height: 100%;
+  text-indent: 30px;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.link-follower {
+  border-color: $theme-primary;
+}
+
+.link-follower-parent > * {
+  display: flex;
+}
+
+.logo {
+  max-height: 16px;
+  max-width: 118px;
+}
+
+.nav-link {
+  padding: 0 0.75rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
+
+  &:visited {
+    color: $text-color;
+  }
+
+  &.active {
+    color: $active-text-color;
+    border-bottom: solid 1px $active-text-color;
+  }
+}
+
+.right-nav > hbox {
+  padding: 0 1.25rem;
+
+  &:first-of-type {
+    border-right: solid 1px $grey;
+  }
+}
+
+.site-nav {
+  background-color: transparent;
+  font-size: 14pt;
+  height: 3.875rem;
+}

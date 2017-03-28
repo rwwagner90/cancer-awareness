@@ -1,6 +1,10 @@
 /* eslint-env node */
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
+var shim = require('@html-next/flexi-layouts/lib/pod-templates-shim');
+
+shim(EmberApp);
+
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here

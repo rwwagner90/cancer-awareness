@@ -1,0 +1,54 @@
+{{#burger-menu as |burger|}}
+  {{#burger.menu
+    dismissOnItemClick=true
+    itemTagName="li" as |menu|}}
+
+    <button class="c-button button-reset"
+      {{action burger.state.actions.close}} >
+      <i class="icon-close"></i>
+    </button>
+
+    <ul>
+      {{#menu.item}}
+        {{link-to 'Home' 'index'}}
+      {{/menu.item}}
+
+      {{#menu.item}}
+        {{link-to 'Gallery' 'gallery'}}
+      {{/menu.item}}
+
+      {{#menu.item}}
+        {{link-to 'Shop' 'shop'}}
+      {{/menu.item}}
+    </ul>
+  {{/burger.menu}}
+
+  {{#burger.outlet}}
+    <grid class="site-nav">
+      <hbox fit align="center">
+        <button
+          class="c-button button-reset {{burger.state.position}} {{if burger.state.open 'burger-hidden'}}"
+          {{action burger.state.actions.toggle}}>
+          <i class="icon-open"></i>
+        </button>
+      </hbox>
+      <hbox fill>
+        <hbox xs="6" sm="3" align="center"><img class="logo" alt="Ember" src="../../embner-logo.png"></hbox>
+        <hbox xs="6" sm="9" justify="end" class="right-nav">
+          <hbox fit xs="8" sm="10" align="center" justify="end" class="add-button">
+            {{svg-jar "add"}}
+            {{! template-lint-disable }}
+            {{#popover-on-element
+              showOn="click"
+              spacing=0 as |popover|}}
+              {{link-to 'Add Leads' 'add-leads'}}
+            {{/popover-on-element}}
+            {{! template-lint-enable }}
+          </hbox>
+          <hbox xs="4" sm="2" align="center" justify="center">{{svg-jar "search"}}</hbox>
+        </hbox>
+      </hbox>
+    </grid>
+    {{yield}}
+  {{/burger.outlet}}
+{{/burger-menu}}
