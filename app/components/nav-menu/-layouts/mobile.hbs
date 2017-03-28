@@ -33,20 +33,7 @@
         </button>
       </hbox>
       <hbox fill>
-        <hbox xs="6" sm="3" align="center"><img class="logo" alt="Ember" src="../../embner-logo.png"></hbox>
-        <hbox xs="6" sm="9" justify="end" class="right-nav">
-          <hbox fit xs="8" sm="10" align="center" justify="end" class="add-button">
-            {{svg-jar "add"}}
-            {{! template-lint-disable }}
-            {{#popover-on-element
-              showOn="click"
-              spacing=0 as |popover|}}
-              {{link-to 'Add Leads' 'add-leads'}}
-            {{/popover-on-element}}
-            {{! template-lint-enable }}
-          </hbox>
-          <hbox xs="4" sm="2" align="center" justify="center">{{svg-jar "search"}}</hbox>
-        </hbox>
+        <hbox xs="6" sm="3" align="center"><img class="logo" alt="Ember" src="../../ember-logo.png"></hbox>
       </hbox>
     </grid>
     {{yield}}

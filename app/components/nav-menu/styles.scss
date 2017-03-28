@@ -78,12 +78,14 @@ ul {
 }
 
 .logo {
-  max-height: 16px;
-  max-width: 118px;
+  max-height: 52px;
+  max-width: 136px;
+  padding: 1rem 0;
 }
 
 .nav-link {
-  padding: 0 0.75rem;
+  font-size: 14pt;
+  margin-right: 2rem;
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.3s;
@@ -110,4 +112,9 @@ ul {
   background-color: transparent;
   font-size: 14pt;
   height: 3.875rem;
+}
+
+.subtext {
+  font-size: 10pt;
+  padding: 0.5rem 0;
 }

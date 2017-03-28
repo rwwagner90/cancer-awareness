@@ -1,15 +1,21 @@
-<grid class="site-nav">
-  <hbox xs="7" md="6">
-    <centered fit>
-      {{link-to 'Home' 'index' class="nav-link"}}
-    </centered>
-    <centered fit>
-      {{link-to 'Gallery' 'gallery' class="nav-link"}}
-    </centered>
-    <centered fit>
-      {{link-to 'Shop' 'shop' class="nav-link"}}
-    </centered>
-  </hbox>
-</grid>
+<hbox justify="center">
+  <box fill xs="11" sm="9" md="8">
+    <hbox><img class="logo" alt="Ember" src="../../ember-logo.png"></hbox>
+    <hbox class="subtext">The framework for creating ambitious applications.</hbox>
+    <grid class="site-nav">
+      <hbox xs="7" md="6">
+        <centered fit>
+          {{link-to 'Home' 'index' class="nav-link"}}
+        </centered>
+        <centered fit>
+          {{link-to 'Gallery' 'gallery' class="nav-link"}}
+        </centered>
+        <centered fit>
+          {{link-to 'Shop' 'shop' class="nav-link"}}
+        </centered>
+      </hbox>
+    </grid>
+  </box>
+</hbox>
 
 {{yield}}
