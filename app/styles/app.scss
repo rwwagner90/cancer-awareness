@@ -9,9 +9,21 @@ html, body {
 
 body {
   background-color: $background-color;
+  background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
   color: $text-color;
   font-family: 'Muli', sans-serif;
   margin: 0;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    color: $active-text-color;
+  }
 }
 
 .section {

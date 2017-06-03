@@ -1,0 +1,8 @@
+a {
+  color: $text-color;
+  text-decoration: none;
+  width: 100%;
+  &:hover {
+    color: $active-text-color;
+  }
+}
