@@ -1,1 +1,61 @@
-{{yield}}
+<grid>
+  <hbox xs="12" md="5" lg="4" class="left">
+    <centered xs="12">
+      <h1 class="the-team">The Team</h1>
+    </centered>
+    <hbox justify="center" xs="12">
+      <hbox xs="10">
+        <p>
+          This effort was the brainchild of <a href="https://github.com/rwwagner90">Robert Wagner</a> from
+          <a href="https://shipshape.io">Ship Shape</a>, a lifelong beard and No Shave November enthusiast,
+          who happened to notice one day that the end of November had Ember in it.
+
+          After reaching out to <a href="https://github.com/wifelette">Leah Silber</a> from
+          <a href="http://tilde.io">Tilde</a>, and discussing for a bit, the idea evolved to include a
+          fundraiser for cancer awareness supporting both men and women's health issues.
+        </p>
+      </hbox>
+    </hbox>
+  </hbox>
+
+  <hbox xs="12" md="7" lg="8">
+    <centered xs="12" sm="6">
+      <vbox>
+        <hbox xs="12">
+          <centered xs="12">
+            <img src="../img/robert.jpeg" class="photo">
+          </centered>
+        </hbox>
+        <hbox justify="center">
+          <hbox xs="6">
+            <centered xs="6">
+              {{svg-jar 'twitter' height="30" width="30"}}
+            </centered>
+            <centered xs="6">
+              {{svg-jar 'github-alt' height="30" width="30"}}
+            </centered>
+          </hbox>
+        </hbox>
+      </vbox>
+    </centered>
+    <centered xs="12" sm="6">
+      <vbox>
+        <hbox xs="12">
+          <centered xs="12">
+            <img src="../img/leah.jpeg" class="photo">
+          </centered>
+        </hbox>
+        <hbox justify="center">
+          <hbox xs="6">
+            <centered xs="6">
+              {{svg-jar 'twitter' height="30" width="30"}}
+            </centered>
+            <centered xs="6">
+              {{svg-jar 'github-alt' height="30" width="30"}}
+            </centered>
+          </hbox>
+        </hbox>
+      </vbox>
+    </centered>
+  </hbox>
+</grid>

@@ -23,6 +23,7 @@ a {
   text-decoration: none;
   &:hover {
     color: $active-text-color;
+    cursor: pointer;
   }
 }
 

@@ -1,0 +1,31 @@
+& {
+  color: $white;
+}
+
+.the-team {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.left {
+  background: linear-gradient(270deg, #FA6195, #6D99FF);
+  border-radius: 12px 12px 0px 0px;
+  padding: 10px 0;
+
+  @media (min-width: 992px) {
+    border-radius: 12px 0px 0px 12px;
+  }
+}
+
+.photo {
+  border-radius: 50%;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+a {
+  color: $text-color;
+  &:hover {
+    color: $active-text-color;
+  }
+}
