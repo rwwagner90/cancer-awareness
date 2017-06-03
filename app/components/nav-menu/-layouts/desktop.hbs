@@ -4,18 +4,18 @@
     <hbox class="subtext">The framework for creating ambitious applications.</hbox>
     <grid class="site-nav">
       <hbox xs="7" md="6">
-        <centered fit>
-          {{link-to 'Home' 'index' class="nav-link"}}
-        </centered>
-        <centered fit>
-          {{link-to 'Gallery' 'gallery' class="nav-link"}}
-        </centered>
-        <centered fit>
-          {{link-to 'Shop' 'shop' class="nav-link"}}
-        </centered>
+        {{#links-with-follower
+          activeSelector="centered.active:not(centered.ember-transitioning-out), centered.ember-transitioning-in"
+          containerTagName="hbox"
+          followerAnimationDuration=200
+          linkTagName="centered"
+          tagName='vbox'}}
+          {{link-to 'Home' 'index' class="nav-link" tagName='centered'}}
+          {{link-to 'Gallery' 'gallery' class="nav-link" tagName='centered'}}
+          {{link-to 'Shop' 'shop' class="nav-link" tagName='centered'}}
+        {{/links-with-follower}}
       </hbox>
     </grid>
+    {{yield}}
   </box>
 </hbox>
-
-{{yield}}

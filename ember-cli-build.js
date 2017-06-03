@@ -7,7 +7,14 @@ shim(EmberApp);
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    // Add options here
+    'ember-cli-staticboot': {
+      paths: [
+        '/',
+        '/gallery',
+        '/shop'
+      ],
+      destDir: 'staticboot' // default
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated

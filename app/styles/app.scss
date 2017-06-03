@@ -1,3 +1,4 @@
+@import 'fonts';
 @import 'variables';
 @import 'pod-styles';
 
@@ -9,5 +10,12 @@ html, body {
 body {
   background-color: $background-color;
   color: $text-color;
+  font-family: 'Muli', sans-serif;
   margin: 0;
+}
+
+.section {
+  background-color: $white;
+  border-radius: 12px;
+  margin: 20px 0;
 }

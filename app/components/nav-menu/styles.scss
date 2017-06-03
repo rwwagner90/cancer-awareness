@@ -70,7 +70,7 @@ ul {
 }
 
 .link-follower {
-  border-color: $theme-primary;
+  border-color: $active-text-color;
 }
 
 .link-follower-parent > * {
@@ -85,8 +85,7 @@ ul {
 
 .nav-link {
   font-size: 14pt;
-  margin-right: 2rem;
-  text-decoration: none;
+  padding: 0 0.75rem;
   text-transform: uppercase;
   transition: color 0.3s;
 
@@ -96,7 +95,6 @@ ul {
 
   &.active {
     color: $active-text-color;
-    border-bottom: solid 1px $active-text-color;
   }
 }
 
