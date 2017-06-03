@@ -5,7 +5,7 @@
   color: $white;
   font-size: 14pt;
   margin: 10px;
-  padding: 14px 28px;
+  padding: 14px;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -19,6 +19,24 @@
 
 .section {
   padding: 10px;
+}
+
+.section-wrapper {
+  // Mobile we want no padding
+  padding-left: 0px;
+  padding-right: 0px;
+
+  // Desktop we need a bunch of weird padding
+  @media (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    &:first-of-type {
+      padding-left: 0;
+    }
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
 }
 
 .svg {
