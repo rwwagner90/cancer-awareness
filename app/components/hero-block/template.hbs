@@ -1,13 +1,26 @@
-<centered>
-  <h1 class="cancer-sucks">Cancer sucks.</h1>
-</centered>
-<hbox justify="center">
-  <hbox xs="10">
-    <p>
-      Join us, and the rest of the Ember community in the fight against cancer.
-      Show your support by purchasing a custom Zoey and Tomster shirt and all proceeds
-      will be given to the <a href="http://www.nationalbreastcancer.org/">National Breast Cancer Foundation</a>
-      and <a href="https://no-shave.org/">No-Shave November</a>.
-    </p>
+<grid>
+  <hbox xs="12" md="6">
+    <centered xs="12">
+      <h1 class="cancer-sucks">Cancer sucks.</h1>
+    </centered>
+    <hbox justify="center" xs="12">
+      <hbox xs="10">
+        <p>
+          Join us, and the rest of the Ember community in the fight against cancer.
+          Show your support by purchasing a custom Zoey and Tomster shirt and all proceeds
+          will be given to the <a href="http://www.nationalbreastcancer.org/">National Breast Cancer Foundation</a>
+          and <a href="https://no-shave.org/">No-Shave November</a>.
+        </p>
+      </hbox>
+    </hbox>
   </hbox>
-</hbox>
+
+  <hbox xs="12" md="6" class="right">
+    <centered class="mascot">
+      {{svg-jar 'zoey' height="175" width="175"}}
+    </centered>
+    <centered class="mascot">
+      {{svg-jar 'tomster' height="175" width="175"}}
+    </centered>
+  </hbox>
+</grid>

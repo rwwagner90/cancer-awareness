@@ -29,13 +29,17 @@
         <button
           class="c-button button-reset {{burger.state.position}} {{if burger.state.open 'burger-hidden'}}"
           {{action burger.state.actions.toggle}}>
-          <i class="icon-open"></i>
+          {{svg-jar 'burger-menu' height="25" width="25"}}
         </button>
       </hbox>
       <hbox fill>
         <hbox xs="6" sm="3" align="center"><img class="logo" alt="Ember" src="../../ember-logo.png"></hbox>
       </hbox>
     </grid>
-    {{yield}}
+    <hbox justify="center">
+      <box fill xs="11" sm="10">
+        {{yield}}
+      </box>
+    </hbox>
   {{/burger.outlet}}
 {{/burger-menu}}
