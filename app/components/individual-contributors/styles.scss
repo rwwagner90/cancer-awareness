@@ -9,12 +9,7 @@
 
 .left {
   background: linear-gradient(270deg, #FA6195, #6D99FF);
-  border-radius: 12px 12px 0px 0px;
   padding: 10px 0;
-
-  @media (min-width: 992px) {
-    border-radius: 12px 0px 0px 12px;
-  }
 }
 
 .photo {
