@@ -35,6 +35,12 @@ a {
   }
 }
 
+.logo {
+  max-height: 52px;
+  max-width: 136px;
+  padding: 1rem 0;
+}
+
 .right {
   border-radius: 0px 0px 12px 12px;
 
@@ -47,4 +53,9 @@ a {
   background-color: $white;
   border-radius: 12px;
   margin: 20px 0;
+}
+
+.subtext {
+  font-size: 10pt;
+  padding: 0.5rem 0;
 }

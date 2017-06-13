@@ -1,6 +1,10 @@
-{{#nav-menu}}
-  <main>
-    {{liquid-outlet use="cross-fade"}}
-  </main>
-  {{site-footer}}
-{{/nav-menu}}
+<hbox justify="center">
+  <box fill xs="11" sm="9" md="8">
+    <hbox>{{svg-jar 'ember' class="logo"}}</hbox>
+    <hbox class="subtext">The framework for creating ambitious applications.</hbox>
+    <main>
+      {{liquid-outlet use="cross-fade"}}
+    </main>
+    {{site-footer}}
+  </box>
+</hbox>

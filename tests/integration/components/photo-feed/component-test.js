@@ -12,14 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{photo-feed}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#photo-feed}}
-      template block text
-    {{/photo-feed}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().text().trim().replace(/\s/g, '').substring(0, 50), '');
 });

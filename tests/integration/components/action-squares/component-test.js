@@ -12,14 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{action-squares}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#action-squares}}
-      template block text
-    {{/action-squares}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().text().trim().replace(/\s/g, '').substring(0, 50), 'ShirtsShopNowShirtsShopNowShirtsShopNow');
 });

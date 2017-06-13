@@ -12,14 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{about-cri}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#about-cri}}
-      template block text
-    {{/about-cri}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().text().trim().replace(/\s/g, '').substring(0, 50), 'AboutCRISince1953,theCancerResearchInstitutehasled');
 });

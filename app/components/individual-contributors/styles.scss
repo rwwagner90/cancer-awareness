@@ -2,6 +2,10 @@
   color: $white;
 }
 
+&.section {
+  margin: 20px 0 40px 0;
+}
+
 .the-team {
   font-size: 50px;
   font-weight: 400;
@@ -21,7 +25,13 @@
 
 a {
   color: $text-color;
+  svg {
+    padding-bottom: 20px;
+  }
   &:hover {
     color: $active-text-color;
+    svg path {
+      fill: $link-color;
+    }
   }
 }

@@ -1,4 +1,6 @@
 /* eslint-env node */
+'use strict';
+
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var shim = require('@html-next/flexi-layouts/lib/pod-templates-shim');
@@ -6,7 +8,7 @@ var shim = require('@html-next/flexi-layouts/lib/pod-templates-shim');
 shim(EmberApp);
 
 module.exports = function(defaults) {
-  var app = new EmberApp(defaults, {
+  let app = new EmberApp(defaults, {
   });
 
   // Use `app.import` to add additional libraries to the generated
