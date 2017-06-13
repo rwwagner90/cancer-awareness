@@ -8,6 +8,7 @@
   padding: 14px;
   text-align: center;
   text-transform: uppercase;
+  width: 150px;
   white-space: nowrap;
   &:hover {
     cursor: pointer;
@@ -41,4 +42,5 @@
 
 .svg {
   margin: 10px;
+  padding: 10px;
 }
