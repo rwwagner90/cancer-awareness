@@ -40,7 +40,18 @@
   }
 }
 
+img {
+  height: auto;
+  width: 80%;
+}
+
 .svg {
+  height: 200px;
+  width: auto;
+}
+
+img, .svg {
   margin: 10px;
   padding: 10px;
+
 }
