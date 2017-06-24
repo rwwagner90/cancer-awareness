@@ -8,7 +8,7 @@ export default Route.extend({
       title: 'Cancer Awareness - Ember.js',
       description: 'Join us, and the rest of the Ember community in the fight against cancer.',
       type: 'website',
-      url: ''
+      url: 'https://emberjs.com/'
     });
   },
 });
