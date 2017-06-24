@@ -15,10 +15,10 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "@html-next/flexi-config": "^2.0.0-beta.12",
-    "@html-next/flexi-default-styles": "^2.0.0-beta.12",
-    "@html-next/flexi-dsl": "^2.0.0-beta.12",
-    "@html-next/flexi-layouts": "^2.0.0-beta.12",
+    "@html-next/flexi-config": "^2.0.0",
+    "@html-next/flexi-default-styles": "^2.0.1",
+    "@html-next/flexi-dsl": "^2.0.1",
+    "@html-next/flexi-layouts": "^2.0.1",
     "broccoli-asset-rev": "^2.4.5",
     "ember-burger-menu": "^2.0.1",
     "ember-cli": "~2.14.0-beta.2",
@@ -44,7 +44,7 @@
     "ember-source": "~2.14.0-beta.3",
     "ember-svg-jar": "^0.10.3",
     "eslint-plugin-ember": "^3.1.1",
-    "flexi": "^2.0.0-beta.12",
+    "flexi": "^2.0.1",
     "liquid-fire": "^0.27.3",
     "loader.js": "^4.2.3"
   },
