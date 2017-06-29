@@ -1,7 +1,3 @@
-& {
-  color: $white;
-}
-
 &.section {
   margin: 20px 0 40px 0;
 }
@@ -12,8 +8,11 @@
 }
 
 .left {
-  background: linear-gradient(270deg, #FA6195, #6D99FF);
   padding: 10px 0;
+}
+
+.right {
+  background: linear-gradient(270deg, #FA6195, #6D99FF);
 }
 
 .photo {
@@ -24,7 +23,6 @@
 }
 
 a {
-  color: $text-color;
   svg {
     padding-bottom: 20px;
   }
