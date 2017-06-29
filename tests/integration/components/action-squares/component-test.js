@@ -12,5 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{action-squares}}`);
 
-  assert.equal(this.$().text().trim().replace(/\s/g, '').substring(0, 50), 'ShirtsShopNowShirtsShopNowShirtsShopNow');
+  assert.equal(this.$().text().trim().replace(/\s/g, '').substring(0, 50), 'ShopNowCRIDonateShopNow');
 });

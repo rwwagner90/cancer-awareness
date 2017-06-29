@@ -12,5 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{individual-contributors}}`);
 
-  assert.equal(this.$().text().trim().replace(/\s/g, '').substring(0, 50), 'TheTeamThiseffortwasthebrainchildofRobertWagnerfro');
+  assert.equal(this.$().text().trim().replace(/\s/g, '').substring(0, 50), 'TheTeamThiseffortisthebrainchildofRobertWagnerfrom');
 });
