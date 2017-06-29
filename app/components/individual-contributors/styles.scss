@@ -25,6 +25,9 @@
 a {
   svg {
     padding-bottom: 20px;
+    path {
+      fill: $text-color;
+    }
   }
   &:hover {
     color: $active-text-color;
