@@ -5,10 +5,10 @@ export default Route.extend({
   headData: service(),
   afterModel() {
     return this.get('headData').setProperties({
-      title: 'Cancer Awareness - Ember.js',
+      title: 'Cancer Awareness - Ember Cares',
       description: 'Join us, and the rest of the Ember community in the fight against cancer.',
       type: 'website',
-      url: 'https://emberjs.com/'
+      url: 'https://embercares.com/'
     });
   },
 });
