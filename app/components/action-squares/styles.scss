@@ -26,18 +26,6 @@
   // Mobile we want no padding
   padding-left: 0px;
   padding-right: 0px;
-
-  // Desktop we need a bunch of weird padding
-  @media (min-width: 768px) {
-    padding-left: 20px;
-    padding-right: 20px;
-    &:first-of-type {
-      padding-left: 0;
-    }
-    &:last-of-type {
-      padding-right: 0;
-    }
-  }
 }
 
 img {
@@ -45,12 +33,24 @@ img {
   width: 80%;
 }
 
-.svg {
-  height: 200px;
-  width: auto;
+img {
+  margin: 0;
+  padding: 0;
 }
 
-img, .svg {
-  margin: 0px;
-  padding: 0px;
+
+@media (min-width: 768px) {
+  .col-sm-4 {
+    position: relative;
+    min-height: 1px;
+    box-sizing: border-box;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 0 31%;
+    -ms-flex: 1 0 31%;
+    flex: 1 0 31%;
+    max-width: 31%;
+  }
 }
