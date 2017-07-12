@@ -15,6 +15,14 @@
   background: linear-gradient(270deg, #FA6195, #6D99FF);
 }
 
+.svg-link {
+  height: 20px;
+}
+
+.person {
+  padding: 20px;
+}
+
 .photo {
   border-radius: 50%;
   max-height: 150px;
@@ -24,7 +32,6 @@
 
 a {
   svg {
-    padding-bottom: 20px;
     path {
       fill: $text-color;
     }
